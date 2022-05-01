@@ -1,0 +1,208 @@
+.home-carousel {
+  height: auto;
+  width: 100%;
+}
+
+.home-carousel-slide {
+  position: relative;
+}
+
+.home-carousel-slide-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px;
+  border-radius: 4px;
+  max-width: 55%;
+}
+
+.home-carousel-slide-image {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.home-carousel-slide-tag {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+}
+
+.home-carousel-slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(
+    54.22deg,
+    rgba(0, 0, 0, 0.4) 47.82%,
+    rgba(0, 0, 0, 0) 73.47%
+  );
+}
+
+.home-carousel-slide-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.home-carousel-slide-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #e5e5e5;
+}
+
+.home-destination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.home-destination-list li {
+  flex: 0 1 18.333%;
+  margin: 0 25px 0 0;
+}
+
+.home-destination-list li:nth-child(5n + 5) {
+  margin: 0;
+}
+
+.home-destination {
+  background: url("/assets/home/home-destination.png"), #c4c4c4;
+  height: 235px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 0 40px 0;
+}
+
+.home-destination-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: rgba(90, 90, 90, 0.63);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translate(0%, -50%);
+}
+
+.home-travels {
+  position: relative;
+  margin: 0 0 160px 0;
+}
+
+.home-travel-bgimg {
+  border-radius: 24px;
+  height: 565px;
+  width: 100%;
+}
+
+.home-travel-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.home-travel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.home-travel-play-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.home-travel-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.home-guide-header {
+  width: 60%;
+  margin: 0 0 40px 0;
+}
+
+.home-guide-header .section-heading {
+  margin: 0 0 10px 0;
+}
+
+.home-guide-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.home-guide-list li {
+  flex: 0 1 32%;
+  margin: 0 24px 40px 0;
+}
+
+.home-guide-list li:nth-child(3n + 3) {
+  margin: 0 0 40px 0;
+}
+
+.home-guides {
+  margin: 0 0 160px 0;
+}
+
+.home-guide {
+  text-align: center;
+}
+
+.home-guide-avatar {
+  height: 255px;
+  width: auto;
+}
+
+.home-guide-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  color: #51468c;
+}
+
+.home-guide-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  text-align: center;
+  color: #51468c;
+}
