@@ -5,6 +5,7 @@
 
 .marketplace-section {
   margin: 80px 0;
+  overflow: hidden;
 }
 
 .marketplace-item {
@@ -63,12 +64,19 @@
   margin: 0;
 }
 
-.marketplace-list {
-  display: flex;
-  flex-wrap: wrap;
+.marketplace-list .slick-list {
+  /* display: flex;
+  flex-wrap: wrap; */
+  overflow: visible;
 }
 
 .marketplace-list li {
-  flex: 0 1 23%;
+  /* flex: 0 1 23%; */
   margin: 0 16px 16px 0;
+}
+
+@media (min-width: 992px) {
+  .marketplace-banner {
+    margin: 180px 0 80px 0;
+  }
 }

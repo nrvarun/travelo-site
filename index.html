@@ -10,20 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Travelo</title>
+    <title>Travelo - Home</title>
 </head>
 
 <body>
     <header class="site-header">
-        <div class="site-header-grid page-container">
+        <div class="site-header-grid">
             <div class="site-header-logo-wrap">
                 <a class="site-header-logo" href="/index.html">
                     <img src="/assets/logos/main.svg" alt="logo" />
                     <p>travelo</p>
                 </a>
             </div>
+            <img src="/assets/menu-icon.svg" class="site-header-navicon" alt="menu icon">
             <nav class="site-header-nav">
                 <ul class="site-header-nav-list">
                     <li>
@@ -32,7 +39,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/about.html">
                             About us
                         </a>
                     </li>
@@ -47,8 +54,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Tickets
+                        <a href="/quiz.html">
+                            quiz
                         </a>
                     </li>
                     <li>
@@ -68,7 +75,18 @@
     <main>
         <section class="home-banner section-margin">
             <div class="page-container">
-                <div class="home-carousel">
+                <div class="home-carousel" id="homeBannerCarousel">
+                    <div class="home-carousel-slide">
+                        <img class="home-carousel-slide-image" src="./assets/banner/home-banner.png" alt="home-banner">
+                        <div class="home-carousel-slide-overlay"></div>
+                        <div class="home-carousel-slide-content">
+                            <p class="home-carousel-slide-tag">LONDON</p>
+                            <h1 class="home-carousel-slide-title">Richird Norton photorealistic rendering as real photos
+                            </h1>
+                            <p class="home-carousel-slide-desc">Progressively incentivize cooperative systems through
+                                technically sound functionalities. The credibly productivate seamless data.</p>
+                        </div>
+                    </div>
                     <div class="home-carousel-slide">
                         <img class="home-carousel-slide-image" src="./assets/banner/home-banner.png" alt="home-banner">
                         <div class="home-carousel-slide-overlay"></div>
@@ -81,6 +99,18 @@
                         </div>
                     </div>
                 </div>
+                <ul class="home-carousel-nav">
+                    <li>
+                        <button id="homeBannerSliderPrev">
+                            <img src="/assets/home-slider-prev.svg" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button id="homeBannerSliderNext">
+                            <img src="/assets/home-slider-next.svg" alt="">
+                        </button>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="home-destinations section-margin">
@@ -171,34 +201,6 @@
                             <p class="blogs-author">By Adam smith</p>
                         </article>
                     </li>
-                    <li>
-                        <article class="blogs">
-                            <img src="/assets/home/home-featured.png" alt="featured">
-                            <a class="blogs-title" href="#">
-                                <p>The Golden Sands of Florida and
-                                    clifornia 5 mins read </p>
-                            </a>
-                            <p class="blogs-desc">Lorem ipsum dolor sit amet, con turadip
-                                iscingelit. In sed et donec purus viverra. Sit
-                                justo velit, eu sed
-                            </p>
-                            <p class="blogs-author">By Adam smith</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="blogs">
-                            <img src="/assets/home/home-featured.png" alt="featured">
-                            <a class="blogs-title" href="#">
-                                <p>The Golden Sands of Florida and
-                                    clifornia 5 mins read </p>
-                            </a>
-                            <p class="blogs-desc">Lorem ipsum dolor sit amet, con turadip
-                                iscingelit. In sed et donec purus viverra. Sit
-                                justo velit, eu sed
-                            </p>
-                            <p class="blogs-author">By Adam smith</p>
-                        </article>
-                    </li>
                 </ul>
             </div>
         </section>
@@ -218,37 +220,73 @@
                 </div>
             </div>
         </section>
+        <section class="home-photos section-margin">
+            <div class="page-container">
+                <div class="slider-nav-wraper">
+                    <h2 class="section-heading">Photos</h2>
+                    <ul class="slider-nav-list">
+                        <li>
+                            <button class="slider-prev" id="homePhotosSliderPrev">
+                                <img src="/assets/slider-prev.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="slider-next" id="homePhotosSliderNext">
+                                <img src="/assets/slider-next.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="home-photos-list" id="homePhotosList">
+                    <li>
+                        <div class="home-photos-img-wrapper">
+                            <img src="/assets/home/photo.png" alt="home photo" class="home-photos-img">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="home-photos-img-wrapper">
+                            <img src="/assets/home/photo.png" alt="home photo" class="home-photos-img">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="home-guides section-margin">
             <div class="page-container">
                 <div class="home-guide-header">
                     <h2 class="section-heading">Our team of guides</h2>
-                    <p class="text-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem adipiscing risus
-                        pulvinar non sed nullam id integer. Integer quis porttitor mauris arcu, pretium orci quam. Enim
+                    <p class="text-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem adipiscing
+                        risus
+                        pulvinar non sed nullam id integer. Integer quis porttitor mauris arcu, pretium orci quam.
+                        Enim
                         cursus mattis nunc aliquam pharetra feugiat ante sollicitudin. </p>
                 </div>
                 <div class="home-guide-wrapper">
-                    <ul class="home-guide-list">
+                    <ul class="guide-list">
                         <li>
-                            <div class="home-guide">
-                                <img src="/assets/home/guide.png" alt="guide" class="home-guide-avatar">
-                                <h3 class="home-guide-name">Dianne Russell</h3>
-                                <p class="home-guide-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
+                            <div class="guide">
+                                <img src="/assets/home/guide.png" alt="guide" class="guide-avatar">
+                                <h3 class="guide-name">Dianne Russell</h3>
+                                <p class="guide-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl,
+                                    sem
                                     adipiscing risus pulvinar</p>
                             </div>
                         </li>
                         <li>
-                            <div class="home-guide">
-                                <img src="/assets/home/guide.png" alt="guide" class="home-guide-avatar">
-                                <h3 class="home-guide-name">Dianne Russell</h3>
-                                <p class="home-guide-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
+                            <div class="guide">
+                                <img src="/assets/home/guide.png" alt="guide" class="guide-avatar">
+                                <h3 class="guide-name">Dianne Russell</h3>
+                                <p class="guide-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl,
+                                    sem
                                     adipiscing risus pulvinar</p>
                             </div>
                         </li>
                         <li>
-                            <div class="home-guide">
-                                <img src="/assets/home/guide.png" alt="guide" class="home-guide-avatar">
-                                <h3 class="home-guide-name">Dianne Russell</h3>
-                                <p class="home-guide-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
+                            <div class="guide">
+                                <img src="/assets/home/guide.png" alt="guide" class="guide-avatar">
+                                <h3 class="guide-name">Dianne Russell</h3>
+                                <p class="guide-desc">Tortor sit nisl purus nunc massa diam velit hac in. Nisl,
+                                    sem
                                     adipiscing risus pulvinar</p>
                             </div>
                         </li>
@@ -258,5 +296,13 @@
         </section>
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"
+    integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="/scripts/common.js"></script>
+<script defer src="/scripts/home.js"></script>
 
 </html>

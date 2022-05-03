@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/marketplace.css">
     <title>Travelo - Marketplace</title>
@@ -18,13 +24,14 @@
 
 <body>
     <header class="site-header">
-        <div class="site-header-grid page-container">
+        <div class="site-header-grid">
             <div class="site-header-logo-wrap">
                 <a class="site-header-logo" href="/index.html">
                     <img src="/assets/logos/main.svg" alt="logo" />
                     <p>travelo</p>
                 </a>
             </div>
+            <img src="/assets/menu-icon.svg" class="site-header-navicon" alt="menu icon">
             <nav class="site-header-nav">
                 <ul class="site-header-nav-list">
                     <li>
@@ -33,7 +40,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/about.html">
                             About us
                         </a>
                     </li>
@@ -48,8 +55,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Tickets
+                        <a href="/quiz.html">
+                            quiz
                         </a>
                     </li>
                     <li>
@@ -88,8 +95,90 @@
         </section>
         <section class="marketplace-clothes marketplace-section">
             <div class="page-container">
-                <h2 class="section-heading">Clothing</h2>
-                <ul class="marketplace-list">
+                <div class="slider-nav-wraper">
+                    <h2 class="section-heading">Clothing</h2>
+                    <ul class="slider-nav-list">
+                        <li>
+                            <button class="slider-prev" id="homeClothingSliderPrev">
+                                <img src="/assets/slider-prev.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="slider-next" id="homeClothingSliderNext">
+                                <img src="/assets/slider-next.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="marketplace-list" id="marketplaceClothingSlider">
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/clothing-1.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/clothing-2.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/clothing-3.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/clothing-4.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
                     <li>
                         <a href="#">
                             <article class="marketplace-item">
@@ -163,83 +252,257 @@
         </section>
         <section class="marketplace-clothes marketplace-section">
             <div class="page-container">
-                <h2 class="section-heading">Technology</h2>
-                <ul class="marketplace-list">
-                    <li>
-                        <a href="#">
-                            <article class="marketplace-item">
-                                <img src="/assets/marketplace/tech-1.png" alt="" class="marketplace-item-img">
-                                <div class="marketplace-item-content">
-                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
-                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
-                                        be distracted by the readable content of a page when </p>
-                                </div>
-                                <div class="marketplace-item-footer">
-                                    <p class="marketplace-item-price">
-                                        $20 .00
-                                    </p>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <article class="marketplace-item">
-                                <img src="/assets/marketplace/tech-2.png" alt="" class="marketplace-item-img">
-                                <div class="marketplace-item-content">
-                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
-                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
-                                        be distracted by the readable content of a page when </p>
-                                </div>
-                                <div class="marketplace-item-footer">
-                                    <p class="marketplace-item-price">
-                                        $20 .00
-                                    </p>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <article class="marketplace-item">
-                                <img src="/assets/marketplace/tech-3.png" alt="" class="marketplace-item-img">
-                                <div class="marketplace-item-content">
-                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
-                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
-                                        be distracted by the readable content of a page when </p>
-                                </div>
-                                <div class="marketplace-item-footer">
-                                    <p class="marketplace-item-price">
-                                        $20 .00
-                                    </p>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <article class="marketplace-item">
-                                <img src="/assets/marketplace/tech-4.png" alt="" class="marketplace-item-img">
-                                <div class="marketplace-item-content">
-                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
-                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
-                                        be distracted by the readable content of a page when </p>
-                                </div>
-                                <div class="marketplace-item-footer">
-                                    <p class="marketplace-item-price">
-                                        $20 .00
-                                    </p>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                </ul>
+                <div class="page-container">
+                    <div class="slider-nav-wraper">
+                        <h2 class="section-heading">Technology</h2>
+                        <ul class="slider-nav-list">
+                            <li>
+                                <button class="slider-prev" id="marketTechSliderPrev">
+                                    <img src="/assets/slider-prev.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="slider-next" id="marketTechSliderNext">
+                                    <img src="/assets/slider-next.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="marketplace-list" id="techplaceClothingSlider">
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-1.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-2.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-3.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-4.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-1.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-2.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-3.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <article class="marketplace-item">
+                                    <img src="/assets/marketplace/tech-4.png" alt="" class="marketplace-item-img">
+                                    <div class="marketplace-item-content">
+                                        <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                        <p class="marketplace-item-desc">It is a long established fact that a reader
+                                            will
+                                            be distracted by the readable content of a page when </p>
+                                    </div>
+                                    <div class="marketplace-item-footer">
+                                        <p class="marketplace-item-price">
+                                            $20 .00
+                                        </p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="marketplace-clothes marketplace-section">
             <div class="page-container">
-                <h2 class="section-heading">Camera</h2>
-                <ul class="marketplace-list">
+                <div class="slider-nav-wraper">
+                    <h2 class="section-heading">Camera</h2>
+                    <ul class="slider-nav-list">
+                        <li>
+                            <button class="slider-prev" id="marketCameraSliderPrev">
+                                <img src="/assets/slider-prev.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="slider-next" id="marketCameraSliderNext">
+                                <img src="/assets/slider-next.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="marketplace-list" id="marketplaceCameraSlider">
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/cam-1.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/cam-2.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/cam-3.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="marketplace-item">
+                                <img src="/assets/marketplace/cam-4.png" alt="" class="marketplace-item-img">
+                                <div class="marketplace-item-content">
+                                    <h3 class="marketplace-item-title">The Holy Grail</h3>
+                                    <p class="marketplace-item-desc">It is a long established fact that a reader will
+                                        be distracted by the readable content of a page when </p>
+                                </div>
+                                <div class="marketplace-item-footer">
+                                    <p class="marketplace-item-price">
+                                        $20 .00
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
                     <li>
                         <a href="#">
                             <article class="marketplace-item">
@@ -313,5 +576,13 @@
         </section>
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"
+    integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="/scripts/common.js"></script>
+<script defer src="/scripts/marketplace.js"></script>
 
 </html>

@@ -20,7 +20,7 @@
 }
 
 .guides-list li {
-  flex: 0 1 15.5%;
+  flex: 0 1 45%;
   margin: 0 16px 16px 0;
 }
 
@@ -92,4 +92,20 @@
 
 .guide-desc span {
   font-weight: 700;
+}
+
+@media (min-width: 767px) {
+  .guides-list li {
+    flex: 0 1 31%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .guides-list li {
+    flex: 0 1 15.222%;
+  }
+
+  .guides-banner {
+    margin: 180px 0 120px 0;
+  }
 }
