@@ -1,0 +1,176 @@
+{
+    "museums": [
+        {
+            "id": 1,
+            "title": "Movie Name",
+            "img": "/assets/guides/1.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",
+            "category": "london"
+        },
+        {
+            "id": 2,
+            "title": "Movie Name",
+            "img": "/assets/guides/2.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "london"
+        },
+        {
+            "id": 3,
+            "title": "Movie Name",
+            "img": "/assets/guides/3.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Adventure"  
+        },
+        {
+            "id": 4,
+            "title": "Movie Name",
+            "img": "/assets/guides/4.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Travel"  
+        },
+        {
+            "id": 5,
+            "title": "Movie Name",
+            "img": "/assets/guides/5.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Fashion"  
+        },
+        {
+            "id": 6,
+            "title": "Movie Name",
+            "img": "/assets/guides/6.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Technology"  
+        },
+        {
+            "id": 7,
+            "title": "Movie Name",
+            "img": "/assets/guides/1.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Branding"  
+        }
+    ],
+    "cities": [
+        {
+            "id": 1,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-1.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",
+            "category": "london"
+        },
+        {
+            "id": 2,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-2.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "london"
+        },
+        {
+            "id": 3,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-3.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Adventure"  
+        },
+        {
+            "id": 4,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-4.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Travel"  
+        },
+        {
+            "id": 5,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-5.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Fashion"  
+        },
+        {
+            "id": 6,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-6.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Technology"  
+        },
+        {
+            "id": 7,
+            "title": "Movie Name",
+            "img": "/assets/guides/city-1.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Branding"  
+        }
+    ],
+    "food": [
+        {
+            "id": 1,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-1.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",
+            "category": "london"
+        },
+        {
+            "id": 2,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-2.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "london"
+        },
+        {
+            "id": 3,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-3.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Adventure"  
+        },
+        {
+            "id": 4,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-4.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Travel"  
+        },
+        {
+            "id": 5,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-5.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Fashion"  
+        },
+        {
+            "id": 6,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-6.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Technology"  
+        },
+        {
+            "id": 7,
+            "title": "Movie Name",
+            "img": "/assets/guides/food-1.png",
+            "desc": "Movie description about this movie and... ",
+            "author": "Adam smith",  
+            "category": "Branding"  
+        }
+    ]
+}

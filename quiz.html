@@ -10,9 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/quiz.css">
-    <title>Travelo - Blogs</title>
+    <title>Travelo - Quiz</title>
 </head>
 
 <body>
@@ -89,39 +95,126 @@
         <section class="quiz-section section-margin">
             <div class="page-container">
                 <div class="quiz-content">
-                    <h2 class="section-heading">Would you like to learn more about how this OKR could be improved? *
-                    </h2>
-                    <form>
-                        <ul class="quiz-list">
-                            <li>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quiz-question-1" id="option-1" value="option-1">
-                                    <p>Yes, please show me how to improve the first Key Result.</p>
-                                </div>
-                            <li>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quiz-question-1" id="option-1" value="option-1">
-                                    <p>Yes, please show me how to improve the second Key Result.</p>
-                                </div>
-                            <li>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quiz-question-1" id="option-1" value="option-1">
-                                    <p>Yes, please show me how to improve the third Key Result.</p>
-                                </div>
-                            <li>
-                                <div class="quiz-option">
-                                    <input type="radio" name="quiz-question-1" id="option-1" value="option-1">
-                                    <p>No, thanks, I got it - take me to the next OKR.</p>
-                                </div>
-                        </ul>
-                        <button>Confirm</button>
-                    </form>
+                    <div class="quiz-result">
 
+                    </div>
+                    <div class="quiz-results">
+                        <div class="quiz-result quiz-result-3">
+                            <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M33 0C14.775 0 0 14.775 0 33C0 51.225 14.775 66 33 66C51.225 66 66 51.225 66 33C66 14.775 51.225 0 33 0ZM47.304 27.42C47.5674 27.1189 47.7679 26.7682 47.8938 26.3885C48.0196 26.0088 48.0682 25.6077 48.0368 25.209C48.0054 24.8102 47.8945 24.4217 47.7107 24.0664C47.5269 23.7111 47.274 23.3961 46.9666 23.14C46.6593 22.8839 46.3039 22.6919 45.9213 22.5752C45.5387 22.4585 45.1366 22.4195 44.7387 22.4605C44.3407 22.5015 43.955 22.6216 43.6042 22.8139C43.2534 23.0062 42.9446 23.2666 42.696 23.58L29.796 39.057L23.121 32.379C22.5552 31.8325 21.7974 31.5301 21.0108 31.537C20.2242 31.5438 19.4718 31.8593 18.9155 32.4155C18.3593 32.9718 18.0438 33.7242 18.037 34.5108C18.0301 35.2974 18.3325 36.0552 18.879 36.621L27.879 45.621C28.1738 45.9156 28.5267 46.1455 28.9152 46.2962C29.3038 46.4468 29.7195 46.5149 30.1358 46.4959C30.5521 46.477 30.9599 46.3716 31.3332 46.1863C31.7065 46.0011 32.0372 45.7401 32.304 45.42L47.304 27.42Z"
+                                    fill="#358B27" />
+                            </svg>
+                            <p class="quiz-result-title">That’s great</p>
+                        </div>
+                        <div class="quiz-result quiz-result-2">
+                            <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M33 0C14.775 0 0 14.775 0 33C0 51.225 14.775 66 33 66C51.225 66 66 51.225 66 33C66 14.775 51.225 0 33 0ZM47.304 27.42C47.5674 27.1189 47.7679 26.7682 47.8938 26.3885C48.0196 26.0088 48.0682 25.6077 48.0368 25.209C48.0054 24.8102 47.8945 24.4217 47.7107 24.0664C47.5269 23.7111 47.274 23.3961 46.9666 23.14C46.6593 22.8839 46.3039 22.6919 45.9213 22.5752C45.5387 22.4585 45.1366 22.4195 44.7387 22.4605C44.3407 22.5015 43.955 22.6216 43.6042 22.8139C43.2534 23.0062 42.9446 23.2666 42.696 23.58L29.796 39.057L23.121 32.379C22.5552 31.8325 21.7974 31.5301 21.0108 31.537C20.2242 31.5438 19.4718 31.8593 18.9155 32.4155C18.3593 32.9718 18.0438 33.7242 18.037 34.5108C18.0301 35.2974 18.3325 36.0552 18.879 36.621L27.879 45.621C28.1738 45.9156 28.5267 46.1455 28.9152 46.2962C29.3038 46.4468 29.7195 46.5149 30.1358 46.4959C30.5521 46.477 30.9599 46.3716 31.3332 46.1863C31.7065 46.0011 32.0372 45.7401 32.304 45.42L47.304 27.42Z"
+                                    fill="#358B27" />
+                            </svg>
+                            <h2 class="quiz-result-title">Well done, you answered two questions correctly!</h2>
+                        </div>
+                        <div class="quiz-result quiz-result-1">
+                            <svg width="66" height="66" viewBox="0 0 66 66" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M33 0C14.775 0 0 14.775 0 33C0 51.225 14.775 66 33 66C51.225 66 66 51.225 66 33C66 14.775 51.225 0 33 0ZM47.304 27.42C47.5674 27.1189 47.7679 26.7682 47.8938 26.3885C48.0196 26.0088 48.0682 25.6077 48.0368 25.209C48.0054 24.8102 47.8945 24.4217 47.7107 24.0664C47.5269 23.7111 47.274 23.3961 46.9666 23.14C46.6593 22.8839 46.3039 22.6919 45.9213 22.5752C45.5387 22.4585 45.1366 22.4195 44.7387 22.4605C44.3407 22.5015 43.955 22.6216 43.6042 22.8139C43.2534 23.0062 42.9446 23.2666 42.696 23.58L29.796 39.057L23.121 32.379C22.5552 31.8325 21.7974 31.5301 21.0108 31.537C20.2242 31.5438 19.4718 31.8593 18.9155 32.4155C18.3593 32.9718 18.0438 33.7242 18.037 34.5108C18.0301 35.2974 18.3325 36.0552 18.879 36.621L27.879 45.621C28.1738 45.9156 28.5267 46.1455 28.9152 46.2962C29.3038 46.4468 29.7195 46.5149 30.1358 46.4959C30.5521 46.477 30.9599 46.3716 31.3332 46.1863C31.7065 46.0011 32.0372 45.7401 32.304 45.42L47.304 27.42Z"
+                                    fill="#358B27" />
+                            </svg>
+                            <h2 class="quiz-result-title">You answered one question correctly</h2>
+                        </div>
+                        <div class="quiz-result quiz-result-0">
+                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="36" cy="36" r="33" fill="#FF0E0E" />
+                                <path
+                                    d="M37.06 36L43.53 29.53C43.6624 29.3878 43.7346 29.1998 43.7311 29.0055C43.7277 28.8112 43.649 28.6258 43.5116 28.4884C43.3742 28.351 43.1888 28.2723 42.9945 28.2688C42.8002 28.2654 42.6121 28.3375 42.4699 28.47L36 34.94L29.53 28.47C29.3878 28.3375 29.1997 28.2654 29.0054 28.2688C28.8111 28.2723 28.6257 28.351 28.4883 28.4884C28.3509 28.6258 28.2722 28.8112 28.2688 29.0055C28.2653 29.1998 28.3375 29.3878 28.47 29.53L34.9399 36L28.4699 42.47C28.3295 42.6106 28.2506 42.8012 28.2506 43C28.2506 43.1987 28.3295 43.3894 28.4699 43.53C28.6106 43.6705 28.8012 43.7493 28.9999 43.7493C29.1987 43.7493 29.3893 43.6705 29.5299 43.53L35.9999 37.06L42.4699 43.53C42.6106 43.6705 42.8012 43.7493 42.9999 43.7493C43.1987 43.7493 43.3893 43.6705 43.53 43.53C43.6704 43.3894 43.7493 43.1988 43.7493 43C43.7493 42.8012 43.6704 42.6106 43.53 42.47L37.06 36Z"
+                                    fill="white" />
+                            </svg>
+                            <h2 class="quiz-result-title">On no try again !</h2>
+                        </div>
+                    </div>
+                    <form name="quizForm">
+                        <div id="quizSlider">
+                            <div id="step1">
+                                <h2 class="section-heading">Would you like to learn more about how this OKR could be
+                                    improved? *
+                                </h2>
+                                <ul class="quiz-list">
+                                    <li>
+                                        <div class="quiz-option">
+                                            <input type="radio" name="question-1" id="option-1" value="first" required>
+                                            <p>Yes, please show me how to improve the first Key Result.</p>
+                                        </div>
+                                    <li>
+                                        <div class="quiz-option">
+                                            <input type="radio" name="question-1" id="option-1" value="second" required>
+                                            <p>Yes, please show me how to improve the second Key Result.</p>
+                                        </div>
+                                    <li>
+                                        <div class="quiz-option">
+                                            <input type="radio" name="question-1" id="option-1" value="third" required>
+                                            <p>Yes, please show me how to improve the third Key Result.</p>
+                                        </div>
+                                    <li>
+                                        <div class="quiz-option">
+                                            <input type="radio" name="question-1" id="option-1" value="final" required>
+                                            <p>No, thanks, I got it - take me to the next OKR.</p>
+                                        </div>
+                                </ul>
+                                <!-- <button class="quiz-confirm-btn" type="button" id="handleQuestion1">Confirm</button> -->
+                            </div>
+                            <div id="step2">
+                                <h2 class="section-heading">Would you like to learn more about how this OKR could be
+                                    improved? *
+                                </h2>
+                                <div class="quiz-list">
+                                    <select name="question-2" id="quizSelect" required>
+                                        <option value="">Select any</option>
+                                        <option value="one">one</option>
+                                        <option value="two">two</option>
+                                        <option value="three">three</option>
+                                    </select>
+                                </div>
+                                <!-- <button class="quiz-confirm-btn" type="button" id="handleQuestion2">Confirm</button> -->
+                            </div>
+                            <div id="step3">
+                                <h2 class="section-heading">Would you like to learn more about how this OKR could be
+                                    improved? *
+                                </h2>
+                                <div class="quiz-list">
+                                    <input name="question-3" type="text" placeholder="Enter your answer here...">
+                                </div>
+                                <button class="quiz-confirm-btn" id="handleQuizConfirm">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="slider-nav-list quiz-slider-nav">
+                        <li>
+                            <button class="slider-prev" id="homePhotosSliderPrev">
+                                <img src="/assets/slider-prev.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="slider-next" id="homePhotosSliderNext">
+                                <img src="/assets/slider-next.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-
     </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"
+    integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="/scripts/quiz.js"></script>
 
 </html>

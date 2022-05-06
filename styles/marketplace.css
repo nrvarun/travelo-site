@@ -5,7 +5,6 @@
 
 .marketplace-section {
   margin: 80px 0;
-  overflow: hidden;
 }
 
 .marketplace-item {
@@ -62,12 +61,6 @@
   line-height: 21px;
   color: #333333;
   margin: 0;
-}
-
-.marketplace-list .slick-list {
-  /* display: flex;
-  flex-wrap: wrap; */
-  overflow: visible;
 }
 
 .marketplace-list li {

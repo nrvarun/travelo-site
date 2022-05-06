@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",
+        "category": "london"
+    },
+    {
+        "id": 2,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",  
+        "category": "london"
+    },
+    {
+        "id": 3,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",  
+        "category": "Adventure"  
+    },
+    {
+        "id": 4,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",  
+        "category": "Travel"  
+    },
+    {
+        "id": 5,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",  
+        "category": "Fashion"  
+    },
+    {
+        "id": 6,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",  
+        "category": "Technology"  
+    },
+    {
+        "id": 7,
+        "title": "The Golden Sands of Florida and clifornia 5 mins read ",
+        "img": "/assets/home/home-featured.png",
+        "desc": "Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et donec purus viverra. Sit justo velit, eu sed",
+        "author": "Adam smith",  
+        "category": "Branding"  
+    }
+]

@@ -30,6 +30,9 @@
 
 .guide {
   position: relative;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.65);
+  overflow: hidden;
 }
 
 .guide-img {
@@ -37,6 +40,8 @@
   object-fit: cover;
   height: auto;
   display: block;
+  min-height: 200px;
+  border-radius: 8px;
 }
 
 .guide-content {
@@ -106,6 +111,6 @@
   }
 
   .guides-banner {
-    margin: 180px 0 120px 0;
+    margin: 120px 0;
   }
 }
